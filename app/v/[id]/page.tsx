@@ -41,7 +41,7 @@ export async function generateMetadata(
 
     const file = data.result[0];
     const title = `Bokep ${file.title} - ${SITENAME}`;
-    const description = `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`;
+    const description = `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama`;
     const image = file.splash_img;
     const previousOgImages = (await parent).openGraph?.images || [];
     const previousTwImages = (await parent).twitter?.images || [];
@@ -87,7 +87,7 @@ export default async function Video({ params }: PageProps) {
         '@type': 'VideoObject',
         name: `${file.title} - ${SITENAME}`,
         thumbnailUrl: file.splash_img,
-        description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
+        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://bokepmuncrat.pages.dev/v/${file.filecode}`,
         embedUrl: `https://doodstream.com/e/${file.filecode}`,
         uploadDate: new Date(
@@ -108,7 +108,7 @@ export default async function Video({ params }: PageProps) {
         '@type': 'Article',
         headline: `Bokep ${file.title} - ${SITENAME}`,
         image: file.splash_img,
-        description: `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
+        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama`,
         url: `https://bokepmuncrat.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
