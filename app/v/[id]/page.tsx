@@ -88,7 +88,7 @@ export default async function Video({ params }: PageProps) {
         name: `${file.title} - ${SITENAME}`,
         thumbnailUrl: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
-        url: `https://bokepsubindo.pages.dev/v/${file.filecode}`,
+        url: `https://bokepmuncrat.pages.dev/v/${file.filecode}`,
         embedUrl: `https://doodstream.com/e/${file.filecode}`,
         uploadDate: new Date(
             file.uploaded + ".000Z"
@@ -96,11 +96,11 @@ export default async function Video({ params }: PageProps) {
         publisher: {
             '@type': 'Organization',
             name: `${SITENAME}`,
-            logo: 'https://bokepsubindo.pages.dev/favicon.ico'},
+            logo: 'https://bokepmuncrat.pages.dev/favicon.ico'},
             author: {
                 '@type': 'Person',
                 name: 'admin',
-                url: 'https://bokepsubindo.pages.dev'
+                url: 'https://bokepmuncrat.pages.dev'
               }
         }
         const jsonLd2 = {
