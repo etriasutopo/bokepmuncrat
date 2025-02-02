@@ -41,7 +41,7 @@ export async function generateMetadata(
 
     const file = data.result[0];
     const title = `Bokep ${file.title} - ${SITENAME}`;
-    const description = `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama`;
+    const description = `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`;
     const image = file.splash_img;
     const previousOgImages = (await parent).openGraph?.images || [];
     const previousTwImages = (await parent).twitter?.images || [];
@@ -84,48 +84,56 @@ export default async function Video({ params }: PageProps) {
     const file = data.result[0];
 	const jsonLd = {
         '@context': 'https://schema.org',
-        '@type': 'VideoObject',
-        name: `${file.title} - ${SITENAME}`,
-        thumbnailUrl: file.splash_img,
-        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
-        url: `https://bokepmuncrat.pages.dev/v/${file.filecode}`,
-        embedUrl: `https://doodstream.com/e/${file.filecode}`,
-        uploadDate: new Date(
-            file.uploaded + ".000Z"
-        ).toISOString(),
-        publisher: {
-            '@type': 'Organization',
-            name: `${SITENAME}`,
-            logo: 'https://bokepmuncrat.pages.dev/favicon.ico'},
-            author: {
-                '@type': 'Person',
-                name: 'admin',
-                url: 'https://bokepmuncrat.pages.dev'
-              }
-        }
-        const jsonLd2 = {
-        '@context': 'https://schema.org',
-        '@type': 'Article',
-        headline: `Bokep ${file.title} - ${SITENAME}`,
+        '@type': 'WebPage',
+        name: `Bokep ${file.title}`,
         image: file.splash_img,
-        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama`,
-        url: `https://bokepmuncrat.pages.dev/v/${file.filecode}`,
+        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
+        url: `https://abgsquirt.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
         publisher: {
             '@type': 'Organization',
             name: `${SITENAME}`,
-            logo: 'https://bokepmuncrat.pages.dev/favicon.ico'},
+            logo: 'https://abgsquirt.pages.dev/favicon.ico'},
             author: {
                 '@type': 'Person',
                 name: 'admin',
-                url: 'https://bokepmuncrat.pages.dev'
+                url: 'https://abgsquirt.pages.dev'
+              }
+        }
+        const jsonLd2 = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: `Bokep ${file.title}`,
+        image: file.splash_img,
+        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
+        url: `https://abgsquirt.pages.dev/v/${file.filecode}`,
+        datePublished: new Date(
+            file.uploaded + ".000Z"
+        ).toISOString(),
+        publisher: {
+            '@type': 'Organization',
+            name: `${SITENAME}`,
+            logo: 'https://abgsquirt.pages.dev/favicon.ico'},
+            author: {
+                '@type': 'Person',
+                name: 'admin',
+                url: 'https://abgsquirt.pages.dev'
               }
         }
         
     return (
-        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
+        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10" itemProp="video" itemScope itemType="http://schema.org/VideoObject">
+<meta itemProp="author" content="admin" />
+<meta itemProp="name" content={`Bokep ${file.title}`} />
+<meta itemProp="description" content={`Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`} />
+<meta itemProp="duration" content={`${file.length}`} />
+<meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
+<meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
+<meta itemProp="uploadDate" content={`${new Date(
+            file.uploaded + ".000Z"
+        ).toISOString()}`} />
         <section>
         {/* Add JSON-LD to your page */}
         <script
